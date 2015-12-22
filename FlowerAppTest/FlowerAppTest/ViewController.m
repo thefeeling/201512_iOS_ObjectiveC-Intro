@@ -22,6 +22,9 @@
     /*
      UIWebView Hidden 속성
      */
+    NSLog(@"viewDidLoad");
+    
+    
     flowerDetailWebView.hidden = YES;
     
     [self getFlowerAction:nil];

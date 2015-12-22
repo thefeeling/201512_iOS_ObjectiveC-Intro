@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="9531" systemVersion="15C50" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="9531" systemVersion="14F27" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9529"/>
@@ -44,17 +44,6 @@
                                     <action selector="toggleAction:" destination="BYZ-38-t0r" eventType="valueChanged" id="Qrl-jb-uBO"/>
                                 </connections>
                             </switch>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Y2u-O2-BrH">
-                                <rect key="frame" x="-23" y="-15" width="46" height="30"/>
-                                <color key="backgroundColor" red="0.86221857343856878" green="0.79198413898133657" blue="1" alpha="1" colorSpace="calibratedRGB"/>
-                                <state key="normal" title="Get New Photo"/>
-                                <variation key="widthClass=compact" fixedFrame="YES">
-                                    <rect key="frame" x="111" y="189" width="143" height="67"/>
-                                </variation>
-                                <connections>
-                                    <action selector="getFlowerAction:" destination="BYZ-38-t0r" eventType="touchUpInside" id="R6l-Jv-B2a"/>
-                                </connections>
-                            </button>
                             <webView contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="XaF-x7-F7b">
                                 <rect key="frame" x="0.0" y="0.0" width="240" height="128"/>
                                 <color key="backgroundColor" red="0.36078431370000003" green="0.38823529410000002" blue="0.4039215686" alpha="1" colorSpace="deviceRGB"/>
@@ -91,6 +80,17 @@
                                     <rect key="frame" x="169" y="396" width="37" height="37"/>
                                 </variation>
                             </activityIndicatorView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Y2u-O2-BrH">
+                                <rect key="frame" x="-23" y="-15" width="46" height="30"/>
+                                <color key="backgroundColor" red="0.86221857343856878" green="0.79198413898133657" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <state key="normal" title="Get New Photo"/>
+                                <variation key="widthClass=compact" fixedFrame="YES">
+                                    <rect key="frame" x="116" y="189" width="143" height="67"/>
+                                </variation>
+                                <connections>
+                                    <action selector="getFlowerAction:" destination="BYZ-38-t0r" eventType="touchUpInside" id="R6l-Jv-B2a"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                         <variation key="default">
@@ -98,11 +98,11 @@
                                 <exclude reference="bKF-bg-CZH"/>
                                 <exclude reference="MG5-1g-ls5"/>
                                 <exclude reference="4Pc-Ka-5Cr"/>
-                                <exclude reference="Y2u-O2-BrH"/>
                                 <exclude reference="XaF-x7-F7b"/>
                                 <exclude reference="a8S-ar-kTE"/>
                                 <exclude reference="901-9C-zCS"/>
                                 <exclude reference="2cp-8e-UGB"/>
+                                <exclude reference="Y2u-O2-BrH"/>
                             </mask>
                         </variation>
                         <variation key="widthClass=compact">
@@ -110,11 +110,11 @@
                                 <include reference="bKF-bg-CZH"/>
                                 <include reference="MG5-1g-ls5"/>
                                 <include reference="4Pc-Ka-5Cr"/>
-                                <include reference="Y2u-O2-BrH"/>
                                 <include reference="XaF-x7-F7b"/>
                                 <include reference="a8S-ar-kTE"/>
                                 <include reference="901-9C-zCS"/>
                                 <include reference="2cp-8e-UGB"/>
+                                <include reference="Y2u-O2-BrH"/>
                             </mask>
                         </variation>
                     </view>
