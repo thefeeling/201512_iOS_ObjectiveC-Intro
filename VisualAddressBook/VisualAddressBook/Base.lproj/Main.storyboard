@@ -34,15 +34,42 @@
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                                 <variation key="heightClass=regular-widthClass=compact" fixedFrame="YES">
-                                    <rect key="frame" x="20" y="254" width="335" height="293"/>
+                                    <rect key="frame" x="20" y="284" width="335" height="293"/>
                                 </variation>
                             </textView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="이름 :" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="98P-Zl-uug">
+                                <rect key="frame" x="-42" y="-21" width="42" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                                <variation key="heightClass=regular-widthClass=compact" fixedFrame="YES">
+                                    <rect key="frame" x="23" y="124" width="64" height="21"/>
+                                </variation>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="전화번호:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Ymi-Hq-sT3">
+                                <rect key="frame" x="-42" y="-21" width="42" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                                <variation key="heightClass=regular-widthClass=compact" fixedFrame="YES">
+                                    <rect key="frame" x="23" y="160" width="64" height="21"/>
+                                </variation>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="이메일 : " textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="34N-xM-rgW">
+                                <rect key="frame" x="-42" y="-21" width="42" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                                <variation key="heightClass=regular-widthClass=compact" fixedFrame="YES">
+                                    <rect key="frame" x="23" y="195" width="64" height="21"/>
+                                </variation>
+                            </label>
                             <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="KEB-kM-6hc">
                                 <rect key="frame" x="-25" y="-30" width="97" height="30"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
                                 <variation key="heightClass=regular-widthClass=compact" fixedFrame="YES">
-                                    <rect key="frame" x="95" y="89" width="223" height="30"/>
+                                    <rect key="frame" x="95" y="119" width="223" height="30"/>
                                 </variation>
                             </textField>
                             <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="anY-jK-lwt">
@@ -50,7 +77,7 @@
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
                                 <variation key="heightClass=regular-widthClass=compact" fixedFrame="YES">
-                                    <rect key="frame" x="95" y="125" width="223" height="30"/>
+                                    <rect key="frame" x="95" y="155" width="223" height="30"/>
                                 </variation>
                             </textField>
                             <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="mWk-TX-VWt">
@@ -58,7 +85,7 @@
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
                                 <variation key="heightClass=regular-widthClass=compact" fixedFrame="YES">
-                                    <rect key="frame" x="95" y="160" width="223" height="30"/>
+                                    <rect key="frame" x="95" y="190" width="223" height="30"/>
                                 </variation>
                             </textField>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="r4K-X0-0au">
@@ -66,7 +93,7 @@
                                 <color key="backgroundColor" red="1" green="0.94399017772441973" blue="0.086808822129800345" alpha="1" colorSpace="calibratedRGB"/>
                                 <state key="normal" title="등록"/>
                                 <variation key="heightClass=regular-widthClass=compact" fixedFrame="YES">
-                                    <rect key="frame" x="20" y="200" width="77" height="40"/>
+                                    <rect key="frame" x="20" y="230" width="77" height="40"/>
                                 </variation>
                                 <connections>
                                     <action selector="addCardAction:" destination="BYZ-38-t0r" eventType="touchUpInside" id="e2Q-Rs-sLF"/>
@@ -77,7 +104,7 @@
                                 <color key="backgroundColor" red="1" green="0.60875278608829198" blue="0.13617031790418654" alpha="1" colorSpace="calibratedRGB"/>
                                 <state key="normal" title="찾기"/>
                                 <variation key="heightClass=regular-widthClass=compact" fixedFrame="YES">
-                                    <rect key="frame" x="116" y="200" width="58" height="39"/>
+                                    <rect key="frame" x="116" y="230" width="58" height="39"/>
                                 </variation>
                                 <connections>
                                     <action selector="findCardAction:" destination="BYZ-38-t0r" eventType="touchUpInside" id="CGM-h7-7SF"/>
@@ -88,37 +115,29 @@
                                 <color key="backgroundColor" red="0.0016079409364734287" green="1" blue="0.58493671771606648" alpha="1" colorSpace="calibratedRGB"/>
                                 <state key="normal" title="삭제"/>
                                 <variation key="heightClass=regular-widthClass=compact" fixedFrame="YES">
-                                    <rect key="frame" x="193" y="200" width="73" height="40"/>
+                                    <rect key="frame" x="193" y="230" width="73" height="40"/>
                                 </variation>
                                 <connections>
                                     <action selector="removeCardAction:" destination="BYZ-38-t0r" eventType="touchUpInside" id="l0D-Hy-dCf"/>
                                 </connections>
                             </button>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="이름 :" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="98P-Zl-uug">
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="총 등록자 수:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="PDj-JX-5Ui">
                                 <rect key="frame" x="-42" y="-21" width="42" height="21"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                 <nil key="highlightedColor"/>
                                 <variation key="heightClass=regular-widthClass=compact" fixedFrame="YES">
-                                    <rect key="frame" x="23" y="94" width="64" height="21"/>
+                                    <rect key="frame" x="95" y="77" width="87" height="21"/>
                                 </variation>
                             </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="전화번호:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Ymi-Hq-sT3">
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="5Ha-95-8VZ">
                                 <rect key="frame" x="-42" y="-21" width="42" height="21"/>
+                                <color key="backgroundColor" red="0.30338719381531654" green="0.86346055005076583" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                 <nil key="highlightedColor"/>
                                 <variation key="heightClass=regular-widthClass=compact" fixedFrame="YES">
-                                    <rect key="frame" x="23" y="130" width="64" height="21"/>
-                                </variation>
-                            </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="이메일 : " textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="34N-xM-rgW">
-                                <rect key="frame" x="-42" y="-21" width="42" height="21"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
-                                <nil key="highlightedColor"/>
-                                <variation key="heightClass=regular-widthClass=compact" fixedFrame="YES">
-                                    <rect key="frame" x="23" y="165" width="64" height="21"/>
+                                    <rect key="frame" x="190" y="77" width="82" height="21"/>
                                 </variation>
                             </label>
                         </subviews>
@@ -127,35 +146,40 @@
                             <mask key="subviews">
                                 <exclude reference="7NJ-Na-hxv"/>
                                 <exclude reference="XSj-Wr-7K0"/>
+                                <exclude reference="98P-Zl-uug"/>
+                                <exclude reference="Ymi-Hq-sT3"/>
+                                <exclude reference="34N-xM-rgW"/>
                                 <exclude reference="KEB-kM-6hc"/>
                                 <exclude reference="anY-jK-lwt"/>
                                 <exclude reference="mWk-TX-VWt"/>
                                 <exclude reference="r4K-X0-0au"/>
                                 <exclude reference="I6G-dU-HJn"/>
                                 <exclude reference="HI5-X3-eD9"/>
-                                <exclude reference="98P-Zl-uug"/>
-                                <exclude reference="Ymi-Hq-sT3"/>
-                                <exclude reference="34N-xM-rgW"/>
+                                <exclude reference="PDj-JX-5Ui"/>
+                                <exclude reference="5Ha-95-8VZ"/>
                             </mask>
                         </variation>
                         <variation key="heightClass=regular-widthClass=compact">
                             <mask key="subviews">
                                 <include reference="7NJ-Na-hxv"/>
                                 <include reference="XSj-Wr-7K0"/>
+                                <include reference="98P-Zl-uug"/>
+                                <include reference="Ymi-Hq-sT3"/>
+                                <include reference="34N-xM-rgW"/>
                                 <include reference="KEB-kM-6hc"/>
                                 <include reference="anY-jK-lwt"/>
                                 <include reference="mWk-TX-VWt"/>
                                 <include reference="r4K-X0-0au"/>
                                 <include reference="I6G-dU-HJn"/>
                                 <include reference="HI5-X3-eD9"/>
-                                <include reference="98P-Zl-uug"/>
-                                <include reference="Ymi-Hq-sT3"/>
-                                <include reference="34N-xM-rgW"/>
+                                <include reference="PDj-JX-5Ui"/>
+                                <include reference="5Ha-95-8VZ"/>
                             </mask>
                         </variation>
                     </view>
                     <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina47"/>
                     <connections>
+                        <outlet property="countLabel" destination="5Ha-95-8VZ" id="kkY-E2-NZy"/>
                         <outlet property="emailTextField" destination="mWk-TX-VWt" id="qim-Wo-mCR"/>
                         <outlet property="nameTextField" destination="KEB-kM-6hc" id="nsj-Tz-45P"/>
                         <outlet property="resultTextView" destination="XSj-Wr-7K0" id="php-0a-1dT"/>

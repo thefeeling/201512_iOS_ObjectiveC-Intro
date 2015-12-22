@@ -21,7 +21,11 @@
 @synthesize nameTextField;
 @synthesize emailTextField;
 @synthesize telTextField;
+@synthesize countLabel;
 
+/*
+ 초기화 코드 부분
+ */
 - (void)viewDidLoad {
     [super viewDidLoad];
     AddressCard *card1 = [[AddressCard alloc]init];
@@ -43,6 +47,7 @@
     card3.tel = @"010-7955-4448";
     //[card3 print];
     
+    //  AdressCard 추가
     myBook = [[AddressBook alloc]init];
     [myBook addCard:card1];
     [myBook addCard:card2];
@@ -71,6 +76,14 @@
      */
     
     //[myBook showCard];
+    
+    
+    
+    /*
+     현재 등록된 사람 추가
+     */
+    NSString *strTemp = [[NSString alloc]initWithFormat:@"%li",[myBook countCard]];
+    countLabel.text = strTemp;
 }
 
 

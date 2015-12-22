@@ -18,6 +18,7 @@
 @property (strong, nonatomic) IBOutlet UITextField *nameTextField;
 @property (strong, nonatomic) IBOutlet UITextField *telTextField;
 @property (strong, nonatomic) IBOutlet UITextField *emailTextField;
+@property (strong, nonatomic) IBOutlet UILabel     *countLabel;
 
 
 -(IBAction)showCardAction:(id)sender;
