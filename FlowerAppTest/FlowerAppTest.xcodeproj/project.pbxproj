@@ -1,0 +1,519 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		8830149F1C2935E20011BFFB /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 8830149E1C2935E20011BFFB /* main.m */; };
+		883014A21C2935E20011BFFB /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 883014A11C2935E20011BFFB /* AppDelegate.m */; };
+		883014A51C2935E20011BFFB /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 883014A41C2935E20011BFFB /* ViewController.m */; };
+		883014A81C2935E20011BFFB /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 883014A61C2935E20011BFFB /* Main.storyboard */; };
+		883014AA1C2935E20011BFFB /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 883014A91C2935E20011BFFB /* Assets.xcassets */; };
+		883014AD1C2935E20011BFFB /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 883014AB1C2935E20011BFFB /* LaunchScreen.storyboard */; };
+		883014B81C2935E20011BFFB /* FlowerAppTestTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 883014B71C2935E20011BFFB /* FlowerAppTestTests.m */; };
+		883014C31C2935E20011BFFB /* FlowerAppTestUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 883014C21C2935E20011BFFB /* FlowerAppTestUITests.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		883014B41C2935E20011BFFB /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 883014921C2935E20011BFFB /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 883014991C2935E20011BFFB;
+			remoteInfo = FlowerAppTest;
+		};
+		883014BF1C2935E20011BFFB /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 883014921C2935E20011BFFB /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 883014991C2935E20011BFFB;
+			remoteInfo = FlowerAppTest;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		8830149A1C2935E20011BFFB /* FlowerAppTest.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FlowerAppTest.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		8830149E1C2935E20011BFFB /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		883014A01C2935E20011BFFB /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		883014A11C2935E20011BFFB /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		883014A31C2935E20011BFFB /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		883014A41C2935E20011BFFB /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		883014A71C2935E20011BFFB /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		883014A91C2935E20011BFFB /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		883014AC1C2935E20011BFFB /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		883014AE1C2935E20011BFFB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		883014B31C2935E20011BFFB /* FlowerAppTestTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = FlowerAppTestTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		883014B71C2935E20011BFFB /* FlowerAppTestTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FlowerAppTestTests.m; sourceTree = "<group>"; };
+		883014B91C2935E20011BFFB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		883014BE1C2935E20011BFFB /* FlowerAppTestUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = FlowerAppTestUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		883014C21C2935E20011BFFB /* FlowerAppTestUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FlowerAppTestUITests.m; sourceTree = "<group>"; };
+		883014C41C2935E20011BFFB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		883014971C2935E20011BFFB /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		883014B01C2935E20011BFFB /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		883014BB1C2935E20011BFFB /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		883014911C2935E10011BFFB = {
+			isa = PBXGroup;
+			children = (
+				8830149C1C2935E20011BFFB /* FlowerAppTest */,
+				883014B61C2935E20011BFFB /* FlowerAppTestTests */,
+				883014C11C2935E20011BFFB /* FlowerAppTestUITests */,
+				8830149B1C2935E20011BFFB /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		8830149B1C2935E20011BFFB /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				8830149A1C2935E20011BFFB /* FlowerAppTest.app */,
+				883014B31C2935E20011BFFB /* FlowerAppTestTests.xctest */,
+				883014BE1C2935E20011BFFB /* FlowerAppTestUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		8830149C1C2935E20011BFFB /* FlowerAppTest */ = {
+			isa = PBXGroup;
+			children = (
+				883014A01C2935E20011BFFB /* AppDelegate.h */,
+				883014A11C2935E20011BFFB /* AppDelegate.m */,
+				883014A31C2935E20011BFFB /* ViewController.h */,
+				883014A41C2935E20011BFFB /* ViewController.m */,
+				883014A61C2935E20011BFFB /* Main.storyboard */,
+				883014A91C2935E20011BFFB /* Assets.xcassets */,
+				883014AB1C2935E20011BFFB /* LaunchScreen.storyboard */,
+				883014AE1C2935E20011BFFB /* Info.plist */,
+				8830149D1C2935E20011BFFB /* Supporting Files */,
+			);
+			path = FlowerAppTest;
+			sourceTree = "<group>";
+		};
+		8830149D1C2935E20011BFFB /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				8830149E1C2935E20011BFFB /* main.m */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		883014B61C2935E20011BFFB /* FlowerAppTestTests */ = {
+			isa = PBXGroup;
+			children = (
+				883014B71C2935E20011BFFB /* FlowerAppTestTests.m */,
+				883014B91C2935E20011BFFB /* Info.plist */,
+			);
+			path = FlowerAppTestTests;
+			sourceTree = "<group>";
+		};
+		883014C11C2935E20011BFFB /* FlowerAppTestUITests */ = {
+			isa = PBXGroup;
+			children = (
+				883014C21C2935E20011BFFB /* FlowerAppTestUITests.m */,
+				883014C41C2935E20011BFFB /* Info.plist */,
+			);
+			path = FlowerAppTestUITests;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		883014991C2935E20011BFFB /* FlowerAppTest */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 883014C71C2935E20011BFFB /* Build configuration list for PBXNativeTarget "FlowerAppTest" */;
+			buildPhases = (
+				883014961C2935E20011BFFB /* Sources */,
+				883014971C2935E20011BFFB /* Frameworks */,
+				883014981C2935E20011BFFB /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = FlowerAppTest;
+			productName = FlowerAppTest;
+			productReference = 8830149A1C2935E20011BFFB /* FlowerAppTest.app */;
+			productType = "com.apple.product-type.application";
+		};
+		883014B21C2935E20011BFFB /* FlowerAppTestTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 883014CA1C2935E20011BFFB /* Build configuration list for PBXNativeTarget "FlowerAppTestTests" */;
+			buildPhases = (
+				883014AF1C2935E20011BFFB /* Sources */,
+				883014B01C2935E20011BFFB /* Frameworks */,
+				883014B11C2935E20011BFFB /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				883014B51C2935E20011BFFB /* PBXTargetDependency */,
+			);
+			name = FlowerAppTestTests;
+			productName = FlowerAppTestTests;
+			productReference = 883014B31C2935E20011BFFB /* FlowerAppTestTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		883014BD1C2935E20011BFFB /* FlowerAppTestUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 883014CD1C2935E20011BFFB /* Build configuration list for PBXNativeTarget "FlowerAppTestUITests" */;
+			buildPhases = (
+				883014BA1C2935E20011BFFB /* Sources */,
+				883014BB1C2935E20011BFFB /* Frameworks */,
+				883014BC1C2935E20011BFFB /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				883014C01C2935E20011BFFB /* PBXTargetDependency */,
+			);
+			name = FlowerAppTestUITests;
+			productName = FlowerAppTestUITests;
+			productReference = 883014BE1C2935E20011BFFB /* FlowerAppTestUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		883014921C2935E20011BFFB /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0720;
+				ORGANIZATIONNAME = imac;
+				TargetAttributes = {
+					883014991C2935E20011BFFB = {
+						CreatedOnToolsVersion = 7.2;
+					};
+					883014B21C2935E20011BFFB = {
+						CreatedOnToolsVersion = 7.2;
+						TestTargetID = 883014991C2935E20011BFFB;
+					};
+					883014BD1C2935E20011BFFB = {
+						CreatedOnToolsVersion = 7.2;
+						TestTargetID = 883014991C2935E20011BFFB;
+					};
+				};
+			};
+			buildConfigurationList = 883014951C2935E20011BFFB /* Build configuration list for PBXProject "FlowerAppTest" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 883014911C2935E10011BFFB;
+			productRefGroup = 8830149B1C2935E20011BFFB /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				883014991C2935E20011BFFB /* FlowerAppTest */,
+				883014B21C2935E20011BFFB /* FlowerAppTestTests */,
+				883014BD1C2935E20011BFFB /* FlowerAppTestUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		883014981C2935E20011BFFB /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				883014AD1C2935E20011BFFB /* LaunchScreen.storyboard in Resources */,
+				883014AA1C2935E20011BFFB /* Assets.xcassets in Resources */,
+				883014A81C2935E20011BFFB /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		883014B11C2935E20011BFFB /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		883014BC1C2935E20011BFFB /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		883014961C2935E20011BFFB /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				883014A51C2935E20011BFFB /* ViewController.m in Sources */,
+				883014A21C2935E20011BFFB /* AppDelegate.m in Sources */,
+				8830149F1C2935E20011BFFB /* main.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		883014AF1C2935E20011BFFB /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				883014B81C2935E20011BFFB /* FlowerAppTestTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		883014BA1C2935E20011BFFB /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				883014C31C2935E20011BFFB /* FlowerAppTestUITests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		883014B51C2935E20011BFFB /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 883014991C2935E20011BFFB /* FlowerAppTest */;
+			targetProxy = 883014B41C2935E20011BFFB /* PBXContainerItemProxy */;
+		};
+		883014C01C2935E20011BFFB /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 883014991C2935E20011BFFB /* FlowerAppTest */;
+			targetProxy = 883014BF1C2935E20011BFFB /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		883014A61C2935E20011BFFB /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				883014A71C2935E20011BFFB /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		883014AB1C2935E20011BFFB /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				883014AC1C2935E20011BFFB /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		883014C51C2935E20011BFFB /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.2;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		883014C61C2935E20011BFFB /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		883014C81C2935E20011BFFB /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = FlowerAppTest/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.imac.FlowerAppTest;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		883014C91C2935E20011BFFB /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = FlowerAppTest/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.imac.FlowerAppTest;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		883014CB1C2935E20011BFFB /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = FlowerAppTestTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.imac.FlowerAppTestTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/FlowerAppTest.app/FlowerAppTest";
+			};
+			name = Debug;
+		};
+		883014CC1C2935E20011BFFB /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = FlowerAppTestTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.imac.FlowerAppTestTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/FlowerAppTest.app/FlowerAppTest";
+			};
+			name = Release;
+		};
+		883014CE1C2935E20011BFFB /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = FlowerAppTestUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.imac.FlowerAppTestUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = FlowerAppTest;
+				USES_XCTRUNNER = YES;
+			};
+			name = Debug;
+		};
+		883014CF1C2935E20011BFFB /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = FlowerAppTestUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.imac.FlowerAppTestUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = FlowerAppTest;
+				USES_XCTRUNNER = YES;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		883014951C2935E20011BFFB /* Build configuration list for PBXProject "FlowerAppTest" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				883014C51C2935E20011BFFB /* Debug */,
+				883014C61C2935E20011BFFB /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		883014C71C2935E20011BFFB /* Build configuration list for PBXNativeTarget "FlowerAppTest" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				883014C81C2935E20011BFFB /* Debug */,
+				883014C91C2935E20011BFFB /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		883014CA1C2935E20011BFFB /* Build configuration list for PBXNativeTarget "FlowerAppTestTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				883014CB1C2935E20011BFFB /* Debug */,
+				883014CC1C2935E20011BFFB /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		883014CD1C2935E20011BFFB /* Build configuration list for PBXNativeTarget "FlowerAppTestUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				883014CE1C2935E20011BFFB /* Debug */,
+				883014CF1C2935E20011BFFB /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 883014921C2935E20011BFFB /* Project object */;
+}
