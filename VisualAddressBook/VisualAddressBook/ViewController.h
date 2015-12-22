@@ -14,9 +14,19 @@
     AddressBook *myBook;
 }
 
-@property (strong,nonatomic) IBOutlet UITextView *resultTextView;
+@property (strong, nonatomic) IBOutlet UITextView  *resultTextView;
+@property (strong, nonatomic) IBOutlet UITextField *nameTextField;
+@property (strong, nonatomic) IBOutlet UITextField *telTextField;
+@property (strong, nonatomic) IBOutlet UITextField *emailTextField;
+
 
 -(IBAction)showCardAction:(id)sender;
+
+-(IBAction)addCardAction:(id)sender;
+
+-(IBAction)findCardAction:(id)sender;
+
+-(IBAction)removeCardAction:(id)sender;
 
 @end
 

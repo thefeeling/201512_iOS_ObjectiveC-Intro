@@ -16,8 +16,13 @@
 }
 
 -(void)addCard:(AddressCard *)theCard;
--(void)showCard;
+
+-(NSString *)showCard;
+
 -(NSUInteger)countCard;
+
 -(AddressCard *)findCard:(NSString *)theName;
+
 -(void)removeCard:(AddressCard *)findCard;
+
 @end

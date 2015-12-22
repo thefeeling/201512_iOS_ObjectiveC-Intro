@@ -26,12 +26,19 @@
 }
 
 
--(void)showCard{
+-(NSString *)showCard{
+    NSMutableString *strTemp = [[NSMutableString alloc] init];
     for (AddressCard *cardTemp in book) {
-        NSLog(@"name : %@", cardTemp.name);
-        NSLog(@"email : %@", cardTemp.email);
-        NSLog(@"tel : %@", cardTemp.tel);
+        [strTemp appendString:cardTemp.name];
+        [strTemp appendString:@"\n"];
+        [strTemp appendString:cardTemp.email];
+        [strTemp appendString:@"\n"];
+        [strTemp appendString:cardTemp.tel];
+        [strTemp appendString:@"\n"];
+        [strTemp appendString:@"----------------------\n"];
+        
     }
+    return strTemp;
 }
 
 -(NSUInteger)countCard{

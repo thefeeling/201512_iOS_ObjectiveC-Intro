@@ -18,6 +18,9 @@
 @implementation ViewController
 
 @synthesize resultTextView;
+@synthesize nameTextField;
+@synthesize emailTextField;
+@synthesize telTextField;
 
 - (void)viewDidLoad {
     [super viewDidLoad];
@@ -46,6 +49,10 @@
     [myBook addCard:card3];
     //[myBook showCard];
     
+    /*
+     카운트 - 찾기 - 삭제
+     
+     
     NSLog(@"count %li", [myBook countCard]);
     
     AddressCard *cardTtemp = [myBook findCard:@"최경석"];
@@ -61,21 +68,75 @@
     
     NSLog(@"삭제 후 검색");
     [myBook removeCard:cardTtemp];
+     */
+    
     //[myBook showCard];
-    // Do any additional setup after loading the view, typically from a nib.
 }
 
 
 -(IBAction)showCardAction:(id)sender{
     //NSLog(@"showCardAction");
-    resultTextView.text = @"showCardAction";
+    resultTextView.text = [myBook showCard];
 }
 
+-(IBAction)addCardAction:(id)sender{
+    AddressCard *tempCard = [[AddressCard alloc]init];
+    
+    /*
+     .연산자 사용법
+     [] 연산자 사용하여 값 참조
+     */
+    tempCard.name = nameTextField.text;
+    [tempCard setEmail:[emailTextField text]];
+    [tempCard setTel:[telTextField text]];
+    
+    /*
+     AddressBook 인스턴스에 tempCard 추가
+     */
+    [myBook addCard:tempCard];
+    
+    resultTextView.text = @"등록이 완료되었습니다.";
+}
+
+-(IBAction)findCardAction:(id)sender{
+    AddressCard *tempCard = [myBook findCard:nameTextField.text];
+    if(tempCard == nil){
+        resultTextView.text = @"검색 결과가 없습니다.";
+    }
+    else{
+        NSMutableString *strTemp = [[NSMutableString alloc]init];
+        [strTemp appendString:@"찾는분의 정보는 아래와 같습니다.\n"];
+        [strTemp appendString:@"------------------------\n"];
+        [strTemp appendString:tempCard.name];
+        [strTemp appendString:@"\n"];
+        [strTemp appendString:tempCard.email];
+        [strTemp appendString:@"\n"];
+        [strTemp appendString:tempCard.tel];
+        resultTextView.text = strTemp;
+    }
+}
+
+-(IBAction)removeCardAction:(id)sender{
+    AddressCard *tempCard = [myBook findCard:nameTextField.text];
+    if(tempCard == nil){
+        resultTextView.text = @"삭제 데이터가 없습니다.";
+    }
+    else{
+        NSMutableString *strTemp = [[NSMutableString alloc]init];
+        [strTemp appendString:tempCard.name];
+        [strTemp appendString:@"님이 삭제 되었습니다."];
+        [strTemp appendString:@"-----------------"];
+        [myBook removeCard:tempCard];
+        resultTextView.text = strTemp;
+    }
+}
 
 
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.
 }
+
+
 
 @end
