@@ -62,6 +62,8 @@
 
     [flowerWebview loadRequest:[NSURLRequest requestWithURL:imageUrl]];
     [flowerDetailWebView loadRequest:[NSURLRequest requestWithURL:detailUrl]];
+    
+    [activityIndicatorView stopAnimating];
 }
 // id는 일종의 제네릭
 -(IBAction)toggleAction:(id)sender{
