@@ -19,15 +19,42 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     
-
-    
-    
     NSURL *initUrl = [[NSURL alloc]initWithString:@"http://www.google.com"];
     
     urlTextField.text = @"www.google.com";
     
     [browserWebView loadRequest:[NSURLRequest requestWithURL:initUrl]];
+    urlTextField.delegate =self;
+}
+
+
+-(BOOL)textFieldShouldReturn:(UITextField *)textField{
+    NSString *urlTxt = [[NSString alloc]initWithString:urlTextField.text];
     
+    
+    if(!([urlTxt containsString:@"http://"] || [urlTxt containsString:@"https://"]))
+    {
+        urlTxt = [@"http://" stringByAppendingString:urlTxt];
+    }
+    
+    
+    
+    //    NSMutableString *tempUrlStr = [[NSMutableString alloc]initWithString:@"http://"];
+    
+    //[tempUrlStr appendString:urlTxt];
+    
+    NSURL *tempUrlTxt = [[NSURL alloc]initWithString:urlTxt];
+    
+    [browserWebView loadRequest:[NSURLRequest requestWithURL:tempUrlTxt]];
+
+    /*
+     [placeTextField resignFirstResponder];
+     [verbTextField resignFirstResponder];
+     [numberTextField resignFirstResponder];
+     */
+    //[textField resignFirstResponder];
+    [urlTextField resignFirstResponder];
+    return YES;
 }
 
 - (void)didReceiveMemoryWarning {
@@ -47,7 +74,7 @@
     
     
     
-//    NSMutableString *tempUrlStr = [[NSMutableString alloc]initWithString:@"http://"];
+    //    NSMutableString *tempUrlStr = [[NSMutableString alloc]initWithString:@"http://"];
 
     //[tempUrlStr appendString:urlTxt];
     
@@ -60,11 +87,14 @@
     [browserWebView goBack];
 }
 
-- (IBAction)cancelPageAction:(id)sender {
-    [browserWebView canGoForward];
+- (IBAction)forwardPageAction:(id)sender {
+    
+    if([browserWebView canGoForward]){
+        [browserWebView goForward];
+    }
 }
 
-- (IBAction)redirectPageAction:(id)sender {
+- (IBAction)refreshPageAction:(id)sender {
     [browserWebView reload];
 }
 
@@ -93,5 +123,11 @@
     
     urlTextField.text = segmentStr;
     [browserWebView loadRequest:[NSURLRequest requestWithURL:tempUrlTxt]];
+}
+
+- (IBAction)cancelPageAction:(id)sender {
+    
+    [browserWebView stopLoading];
+    
 }
 @end

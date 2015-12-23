@@ -8,7 +8,7 @@
 
 #import <UIKit/UIKit.h>
 
-@interface ViewController : UIViewController
+@interface ViewController : UIViewController<UITextFieldDelegate>
 
 @property (weak, nonatomic) IBOutlet UITextField *urlTextField;
 
@@ -18,11 +18,14 @@
 
 - (IBAction)movePageAction:(id)sender;
 - (IBAction)backPageAction:(id)sender;
-- (IBAction)cancelPageAction:(id)sender;
 
-- (IBAction)redirectPageAction:(id)sender;
+- (IBAction)forwardPageAction:(id)sender;
+
+- (IBAction)refreshPageAction:(id)sender;
 
 - (IBAction)segmentPageAction:(id)sender;
+
+- (IBAction)cancelPageAction:(id)sender;
 
 @end
 

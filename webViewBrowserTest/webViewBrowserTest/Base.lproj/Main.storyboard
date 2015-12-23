@@ -17,7 +17,7 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" clearsOnBeginEditing="YES" minimumFontSize="17" clearButtonMode="whileEditing" translatesAutoresizingMaskIntoConstraints="NO" id="u0c-A8-3o3">
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="bottom" borderStyle="roundedRect" textAlignment="natural" clearsOnBeginEditing="YES" minimumFontSize="17" clearButtonMode="whileEditing" translatesAutoresizingMaskIntoConstraints="NO" id="u0c-A8-3o3">
                                 <rect key="frame" x="-25" y="-30" width="97" height="30"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits" keyboardType="URL" returnKeyType="go"/>
@@ -29,7 +29,7 @@
                                 <rect key="frame" x="-23" y="-15" width="46" height="30"/>
                                 <state key="normal" title="Move"/>
                                 <variation key="widthClass=compact" fixedFrame="YES">
-                                    <rect key="frame" x="36" y="630" width="38" height="30"/>
+                                    <rect key="frame" x="20" y="629" width="38" height="30"/>
                                 </variation>
                                 <connections>
                                     <action selector="movePageAction:" destination="BYZ-38-t0r" eventType="touchUpInside" id="DhY-3M-fW2"/>
@@ -42,24 +42,24 @@
                                     <rect key="frame" x="0.0" y="101" width="375" height="521"/>
                                 </variation>
                             </webView>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="JpD-n6-IPP">
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="yTA-Vc-TQW">
                                 <rect key="frame" x="-23" y="-15" width="46" height="30"/>
-                                <state key="normal" title="Cancel"/>
+                                <state key="normal" title="Back"/>
                                 <variation key="widthClass=compact" fixedFrame="YES">
-                                    <rect key="frame" x="203" y="629" width="48" height="30"/>
+                                    <rect key="frame" x="77" y="629" width="34" height="30"/>
                                 </variation>
                                 <connections>
-                                    <action selector="cancelPageAction:" destination="BYZ-38-t0r" eventType="touchUpInside" id="64d-nb-LUa"/>
+                                    <action selector="backPageAction:" destination="BYZ-38-t0r" eventType="touchUpInside" id="d3b-61-lid"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="t4o-WA-WEz">
                                 <rect key="frame" x="-23" y="-15" width="46" height="30"/>
-                                <state key="normal" title="Redirect"/>
+                                <state key="normal" title="refresh"/>
                                 <variation key="widthClass=compact" fixedFrame="YES">
-                                    <rect key="frame" x="297" y="629" width="58" height="30"/>
+                                    <rect key="frame" x="302" y="629" width="49" height="30"/>
                                 </variation>
                                 <connections>
-                                    <action selector="redirectPageAction:" destination="BYZ-38-t0r" eventType="touchUpInside" id="AYq-YN-yIo"/>
+                                    <action selector="refreshPageAction:" destination="BYZ-38-t0r" eventType="touchUpInside" id="hH0-Vp-fJF"/>
                                 </connections>
                             </button>
                             <segmentedControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="jxH-h6-9gg">
@@ -77,14 +77,24 @@
                                     <action selector="segmentPageAction:" destination="BYZ-38-t0r" eventType="valueChanged" id="Nmw-bU-wnb"/>
                                 </connections>
                             </segmentedControl>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="yTA-Vc-TQW">
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Otm-6E-K3s">
                                 <rect key="frame" x="-23" y="-15" width="46" height="30"/>
-                                <state key="normal" title="Back"/>
+                                <state key="normal" title="Cancel"/>
                                 <variation key="widthClass=compact" fixedFrame="YES">
-                                    <rect key="frame" x="114" y="629" width="34" height="30"/>
+                                    <rect key="frame" x="143" y="630" width="48" height="30"/>
                                 </variation>
                                 <connections>
-                                    <action selector="backPageAction:" destination="BYZ-38-t0r" eventType="touchUpInside" id="d3b-61-lid"/>
+                                    <action selector="cancelPageAction:" destination="BYZ-38-t0r" eventType="touchUpInside" id="h0A-6I-2Zs"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="JpD-n6-IPP">
+                                <rect key="frame" x="-23" y="-15" width="46" height="30"/>
+                                <state key="normal" title="Forward"/>
+                                <variation key="widthClass=compact" fixedFrame="YES">
+                                    <rect key="frame" x="222" y="629" width="56" height="30"/>
+                                </variation>
+                                <connections>
+                                    <action selector="forwardPageAction:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Epp-FU-l3k"/>
                                 </connections>
                             </button>
                         </subviews>
@@ -94,10 +104,11 @@
                                 <exclude reference="u0c-A8-3o3"/>
                                 <exclude reference="jOQ-QI-lKO"/>
                                 <exclude reference="vZx-D6-8X9"/>
-                                <exclude reference="JpD-n6-IPP"/>
+                                <exclude reference="yTA-Vc-TQW"/>
                                 <exclude reference="t4o-WA-WEz"/>
                                 <exclude reference="jxH-h6-9gg"/>
-                                <exclude reference="yTA-Vc-TQW"/>
+                                <exclude reference="Otm-6E-K3s"/>
+                                <exclude reference="JpD-n6-IPP"/>
                             </mask>
                         </variation>
                         <variation key="widthClass=compact">
@@ -105,10 +116,11 @@
                                 <include reference="u0c-A8-3o3"/>
                                 <include reference="jOQ-QI-lKO"/>
                                 <include reference="vZx-D6-8X9"/>
-                                <include reference="JpD-n6-IPP"/>
+                                <include reference="yTA-Vc-TQW"/>
                                 <include reference="t4o-WA-WEz"/>
                                 <include reference="jxH-h6-9gg"/>
-                                <include reference="yTA-Vc-TQW"/>
+                                <include reference="Otm-6E-K3s"/>
+                                <include reference="JpD-n6-IPP"/>
                             </mask>
                         </variation>
                     </view>
