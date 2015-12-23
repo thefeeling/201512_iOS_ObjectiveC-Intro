@@ -40,7 +40,11 @@
 
 
 -(IBAction)getFlowerAction:(id)sender{
-    
+    /*
+     loadRequest가 비동기 처리기 떄문에 실재로 애니메이션이 작동 안하는것처럼 보임
+     async
+     */
+     
     [activityIndicatorView startAnimating];
     
     NSString *color = [colorChoiceSegmentedControl titleForSegmentAtIndex:colorChoiceSegmentedControl.selectedSegmentIndex];
@@ -66,7 +70,7 @@
     [flowerWebview loadRequest:[NSURLRequest requestWithURL:imageUrl]];
     [flowerDetailWebView loadRequest:[NSURLRequest requestWithURL:detailUrl]];
     
-    [activityIndicatorView stopAnimating];
+    //[activityIndicatorView stopAnimating];
 }
 // id는 일종의 제네릭
 -(IBAction)toggleAction:(id)sender{
@@ -93,6 +97,16 @@
      */
     
 }
+
+-(void)webViewDidStartLoad:(UIWebView *)webView{
+        [activityIndicatorView startAnimating];
+}
+
+-(void)webViewDidFinishLoad:(UIWebView *)webView{
+        [activityIndicatorView stopAnimating];
+}
+
+
 
 
 

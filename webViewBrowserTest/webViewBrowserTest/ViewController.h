@@ -14,8 +14,15 @@
 
 @property (weak, nonatomic) IBOutlet UIWebView *browserWebView;
 
+@property (strong, nonatomic) IBOutlet UISegmentedControl *urlSegment;
+
 - (IBAction)movePageAction:(id)sender;
 - (IBAction)backPageAction:(id)sender;
+- (IBAction)cancelPageAction:(id)sender;
+
+- (IBAction)redirectPageAction:(id)sender;
+
+- (IBAction)segmentPageAction:(id)sender;
 
 @end
 

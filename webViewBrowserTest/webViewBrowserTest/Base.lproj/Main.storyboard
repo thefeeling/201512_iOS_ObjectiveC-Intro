@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="9531" systemVersion="14F27" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="9531" systemVersion="15C50" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9529"/>
@@ -14,22 +14,22 @@
                         <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
-                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="u0c-A8-3o3">
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" clearsOnBeginEditing="YES" minimumFontSize="17" clearButtonMode="whileEditing" translatesAutoresizingMaskIntoConstraints="NO" id="u0c-A8-3o3">
                                 <rect key="frame" x="-25" y="-30" width="97" height="30"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                <textInputTraits key="textInputTraits"/>
+                                <textInputTraits key="textInputTraits" keyboardType="URL" returnKeyType="go"/>
                                 <variation key="widthClass=compact" fixedFrame="YES">
-                                    <rect key="frame" x="8" y="25" width="255" height="30"/>
+                                    <rect key="frame" x="14" y="63" width="347" height="30"/>
                                 </variation>
                             </textField>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="jOQ-QI-lKO">
                                 <rect key="frame" x="-23" y="-15" width="46" height="30"/>
                                 <state key="normal" title="Move"/>
                                 <variation key="widthClass=compact" fixedFrame="YES">
-                                    <rect key="frame" x="327" y="24" width="38" height="30"/>
+                                    <rect key="frame" x="36" y="630" width="38" height="30"/>
                                 </variation>
                                 <connections>
                                     <action selector="movePageAction:" destination="BYZ-38-t0r" eventType="touchUpInside" id="DhY-3M-fW2"/>
@@ -39,14 +39,49 @@
                                 <rect key="frame" x="0.0" y="0.0" width="240" height="128"/>
                                 <color key="backgroundColor" red="0.36078431370000003" green="0.38823529410000002" blue="0.4039215686" alpha="1" colorSpace="deviceRGB"/>
                                 <variation key="widthClass=compact" fixedFrame="YES">
-                                    <rect key="frame" x="0.0" y="75" width="375" height="592"/>
+                                    <rect key="frame" x="0.0" y="101" width="375" height="521"/>
                                 </variation>
                             </webView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="JpD-n6-IPP">
+                                <rect key="frame" x="-23" y="-15" width="46" height="30"/>
+                                <state key="normal" title="Cancel"/>
+                                <variation key="widthClass=compact" fixedFrame="YES">
+                                    <rect key="frame" x="203" y="629" width="48" height="30"/>
+                                </variation>
+                                <connections>
+                                    <action selector="cancelPageAction:" destination="BYZ-38-t0r" eventType="touchUpInside" id="64d-nb-LUa"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="t4o-WA-WEz">
+                                <rect key="frame" x="-23" y="-15" width="46" height="30"/>
+                                <state key="normal" title="Redirect"/>
+                                <variation key="widthClass=compact" fixedFrame="YES">
+                                    <rect key="frame" x="297" y="629" width="58" height="30"/>
+                                </variation>
+                                <connections>
+                                    <action selector="redirectPageAction:" destination="BYZ-38-t0r" eventType="touchUpInside" id="AYq-YN-yIo"/>
+                                </connections>
+                            </button>
+                            <segmentedControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="jxH-h6-9gg">
+                                <rect key="frame" x="-60" y="-14" width="121" height="29"/>
+                                <segments>
+                                    <segment title="Google"/>
+                                    <segment title="Naver"/>
+                                    <segment title="Daum"/>
+                                    <segment title="Nate"/>
+                                </segments>
+                                <variation key="widthClass=compact" fixedFrame="YES">
+                                    <rect key="frame" x="16" y="27" width="342" height="29"/>
+                                </variation>
+                                <connections>
+                                    <action selector="segmentPageAction:" destination="BYZ-38-t0r" eventType="valueChanged" id="Nmw-bU-wnb"/>
+                                </connections>
+                            </segmentedControl>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="yTA-Vc-TQW">
                                 <rect key="frame" x="-23" y="-15" width="46" height="30"/>
                                 <state key="normal" title="Back"/>
                                 <variation key="widthClass=compact" fixedFrame="YES">
-                                    <rect key="frame" x="277" y="24" width="34" height="30"/>
+                                    <rect key="frame" x="114" y="629" width="34" height="30"/>
                                 </variation>
                                 <connections>
                                     <action selector="backPageAction:" destination="BYZ-38-t0r" eventType="touchUpInside" id="d3b-61-lid"/>
@@ -59,6 +94,9 @@
                                 <exclude reference="u0c-A8-3o3"/>
                                 <exclude reference="jOQ-QI-lKO"/>
                                 <exclude reference="vZx-D6-8X9"/>
+                                <exclude reference="JpD-n6-IPP"/>
+                                <exclude reference="t4o-WA-WEz"/>
+                                <exclude reference="jxH-h6-9gg"/>
                                 <exclude reference="yTA-Vc-TQW"/>
                             </mask>
                         </variation>
@@ -67,6 +105,9 @@
                                 <include reference="u0c-A8-3o3"/>
                                 <include reference="jOQ-QI-lKO"/>
                                 <include reference="vZx-D6-8X9"/>
+                                <include reference="JpD-n6-IPP"/>
+                                <include reference="t4o-WA-WEz"/>
+                                <include reference="jxH-h6-9gg"/>
                                 <include reference="yTA-Vc-TQW"/>
                             </mask>
                         </variation>
@@ -74,6 +115,7 @@
                     <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina47"/>
                     <connections>
                         <outlet property="browserWebView" destination="vZx-D6-8X9" id="8xN-at-MPe"/>
+                        <outlet property="urlSegment" destination="jxH-h6-9gg" id="wyf-7Q-kTy"/>
                         <outlet property="urlTextField" destination="u0c-A8-3o3" id="byl-aM-aYy"/>
                     </connections>
                 </viewController>
