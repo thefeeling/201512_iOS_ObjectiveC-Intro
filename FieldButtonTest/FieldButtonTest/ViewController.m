@@ -8,6 +8,25 @@
 
 #import "ViewController.h"
 
+// TextView 이벤트 버블링 예제
+// 키보드가 내려갈 수 있도록 처리하는 예제
+@interface CustomTextView:UITextView
+
+@end
+
+@implementation CustomTextView
+
+-(void)touchesBegan:(NSSet<UITouch *> *)touches withEvent:(UIEvent *)event{
+    // 이벤트를 흘려보내줌
+    [self.nextResponder touchesBegan:touches withEvent:event];
+}
+
+@end
+
+
+
+
+
 @interface ViewController ()
 
 @end

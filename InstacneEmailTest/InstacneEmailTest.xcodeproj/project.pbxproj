@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		880267591C2B7B5D007BFDDE /* MessageUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 880267581C2B7B5D007BFDDE /* MessageUI.framework */; };
 		88A3CD561C2A947C00F4CFE3 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 88A3CD551C2A947C00F4CFE3 /* main.m */; };
 		88A3CD591C2A947C00F4CFE3 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 88A3CD581C2A947C00F4CFE3 /* AppDelegate.m */; };
 		88A3CD5C1C2A947C00F4CFE3 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 88A3CD5B1C2A947C00F4CFE3 /* ViewController.m */; };
@@ -35,6 +36,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		880267581C2B7B5D007BFDDE /* MessageUI.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MessageUI.framework; path = System/Library/Frameworks/MessageUI.framework; sourceTree = SDKROOT; };
 		88A3CD511C2A947C00F4CFE3 /* InstacneEmailTest.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = InstacneEmailTest.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		88A3CD551C2A947C00F4CFE3 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		88A3CD571C2A947C00F4CFE3 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -58,6 +60,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				880267591C2B7B5D007BFDDE /* MessageUI.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -81,6 +84,7 @@
 		88A3CD481C2A947C00F4CFE3 = {
 			isa = PBXGroup;
 			children = (
+				880267581C2B7B5D007BFDDE /* MessageUI.framework */,
 				88A3CD531C2A947C00F4CFE3 /* InstacneEmailTest */,
 				88A3CD6D1C2A947D00F4CFE3 /* InstacneEmailTestTests */,
 				88A3CD781C2A947D00F4CFE3 /* InstacneEmailTestUITests */,
@@ -496,6 +500,7 @@
 				88A3CD801C2A947D00F4CFE3 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		88A3CD811C2A947D00F4CFE3 /* Build configuration list for PBXNativeTarget "InstacneEmailTestTests" */ = {
 			isa = XCConfigurationList;
@@ -504,6 +509,7 @@
 				88A3CD831C2A947D00F4CFE3 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		88A3CD841C2A947D00F4CFE3 /* Build configuration list for PBXNativeTarget "InstacneEmailTestUITests" */ = {
 			isa = XCConfigurationList;
@@ -512,6 +518,7 @@
 				88A3CD861C2A947D00F4CFE3 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

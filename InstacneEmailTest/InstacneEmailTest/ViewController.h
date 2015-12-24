@@ -8,6 +8,10 @@
 
 #import <UIKit/UIKit.h>
 
+
+
+
+
 @interface ViewController : UIViewController<UIPickerViewDataSource, UIPickerViewDelegate>{
     NSArray *activities;
     NSArray *feeling;
