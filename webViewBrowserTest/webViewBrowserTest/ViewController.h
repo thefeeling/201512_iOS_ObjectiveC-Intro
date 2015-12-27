@@ -16,6 +16,7 @@
 
 - (IBAction)movePageAction:(id)sender;
 - (IBAction)backPageAction:(id)sender;
+- (IBAction)forwardPageAction:(id)sender;
 
 @end
 

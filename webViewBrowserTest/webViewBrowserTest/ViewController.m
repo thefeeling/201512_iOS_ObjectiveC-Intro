@@ -24,7 +24,7 @@
     
     NSURL *initUrl = [[NSURL alloc]initWithString:@"http://www.google.com"];
     
-    urlTextField.text = @"www.google.com";
+    urlTextField.text = @"http://www.google.com";
     
     [browserWebView loadRequest:[NSURLRequest requestWithURL:initUrl]];
     
@@ -37,16 +37,22 @@
 
 - (IBAction)movePageAction:(id)sender {
     
-    NSMutableString *tempUrlStr = [[NSMutableString alloc]initWithString:@"http://"];
     NSString *urlTxt = [[NSString alloc]initWithString:urlTextField.text];
-    
-    [tempUrlStr appendString:urlTxt];
-    
-    NSURL *tempUrlTxt = [[NSURL alloc]initWithString:tempUrlStr];
 
+    NSURL *tempUrlTxt = [[NSURL alloc]initWithString:urlTxt];
+    
+    urlTextField.text = urlTxt;
+    
     [browserWebView loadRequest:[NSURLRequest requestWithURL:tempUrlTxt]];
 }
 
 - (IBAction)backPageAction:(id)sender {
+    if(browserWebView.canGoBack){
+        [browserWebView goBack];
+    }
+}
+
+- (IBAction)forwardPageAction:(id)sender {
+    [browserWebView goForward];
 }
 @end

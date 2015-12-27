@@ -17,19 +17,20 @@
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="u0c-A8-3o3">
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" clearsOnBeginEditing="YES" minimumFontSize="17" clearButtonMode="whileEditing" translatesAutoresizingMaskIntoConstraints="NO" id="u0c-A8-3o3">
                                 <rect key="frame" x="-25" y="-30" width="97" height="30"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                <textInputTraits key="textInputTraits"/>
+                                <textInputTraits key="textInputTraits" keyboardType="URL"/>
                                 <variation key="widthClass=compact" fixedFrame="YES">
-                                    <rect key="frame" x="8" y="25" width="255" height="30"/>
+                                    <rect key="frame" x="8" y="25" width="236" height="30"/>
                                 </variation>
                             </textField>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="jOQ-QI-lKO">
                                 <rect key="frame" x="-23" y="-15" width="46" height="30"/>
+                                <color key="backgroundColor" red="0.39607846736907959" green="0.90980398654937744" blue="0.26274511218070984" alpha="1" colorSpace="deviceRGB"/>
                                 <state key="normal" title="Move"/>
                                 <variation key="widthClass=compact" fixedFrame="YES">
-                                    <rect key="frame" x="327" y="24" width="38" height="30"/>
+                                    <rect key="frame" x="252" y="25" width="112" height="30"/>
                                 </variation>
                                 <connections>
                                     <action selector="movePageAction:" destination="BYZ-38-t0r" eventType="touchUpInside" id="DhY-3M-fW2"/>
@@ -39,14 +40,24 @@
                                 <rect key="frame" x="0.0" y="0.0" width="240" height="128"/>
                                 <color key="backgroundColor" red="0.36078431370000003" green="0.38823529410000002" blue="0.4039215686" alpha="1" colorSpace="deviceRGB"/>
                                 <variation key="widthClass=compact" fixedFrame="YES">
-                                    <rect key="frame" x="0.0" y="75" width="375" height="592"/>
+                                    <rect key="frame" x="0.0" y="92" width="375" height="575"/>
                                 </variation>
                             </webView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="qzN-k1-5oV">
+                                <rect key="frame" x="-23" y="-15" width="46" height="30"/>
+                                <state key="normal" title="Forward"/>
+                                <variation key="widthClass=compact" fixedFrame="YES">
+                                    <rect key="frame" x="308" y="54" width="56" height="30"/>
+                                </variation>
+                                <connections>
+                                    <action selector="forwardPageAction:" destination="BYZ-38-t0r" eventType="touchUpInside" id="PHO-es-Kjy"/>
+                                </connections>
+                            </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="yTA-Vc-TQW">
                                 <rect key="frame" x="-23" y="-15" width="46" height="30"/>
                                 <state key="normal" title="Back"/>
                                 <variation key="widthClass=compact" fixedFrame="YES">
-                                    <rect key="frame" x="277" y="24" width="34" height="30"/>
+                                    <rect key="frame" x="252" y="54" width="34" height="30"/>
                                 </variation>
                                 <connections>
                                     <action selector="backPageAction:" destination="BYZ-38-t0r" eventType="touchUpInside" id="d3b-61-lid"/>
@@ -59,6 +70,7 @@
                                 <exclude reference="u0c-A8-3o3"/>
                                 <exclude reference="jOQ-QI-lKO"/>
                                 <exclude reference="vZx-D6-8X9"/>
+                                <exclude reference="qzN-k1-5oV"/>
                                 <exclude reference="yTA-Vc-TQW"/>
                             </mask>
                         </variation>
@@ -67,6 +79,7 @@
                                 <include reference="u0c-A8-3o3"/>
                                 <include reference="jOQ-QI-lKO"/>
                                 <include reference="vZx-D6-8X9"/>
+                                <include reference="qzN-k1-5oV"/>
                                 <include reference="yTA-Vc-TQW"/>
                             </mask>
                         </variation>
