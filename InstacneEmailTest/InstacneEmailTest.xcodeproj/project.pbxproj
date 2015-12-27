@@ -1,0 +1,526 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		880267591C2B7B5D007BFDDE /* MessageUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 880267581C2B7B5D007BFDDE /* MessageUI.framework */; };
+		88A3CD561C2A947C00F4CFE3 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 88A3CD551C2A947C00F4CFE3 /* main.m */; };
+		88A3CD591C2A947C00F4CFE3 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 88A3CD581C2A947C00F4CFE3 /* AppDelegate.m */; };
+		88A3CD5C1C2A947C00F4CFE3 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 88A3CD5B1C2A947C00F4CFE3 /* ViewController.m */; };
+		88A3CD5F1C2A947C00F4CFE3 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 88A3CD5D1C2A947C00F4CFE3 /* Main.storyboard */; };
+		88A3CD611C2A947C00F4CFE3 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 88A3CD601C2A947C00F4CFE3 /* Assets.xcassets */; };
+		88A3CD641C2A947C00F4CFE3 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 88A3CD621C2A947C00F4CFE3 /* LaunchScreen.storyboard */; };
+		88A3CD6F1C2A947D00F4CFE3 /* InstacneEmailTestTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 88A3CD6E1C2A947D00F4CFE3 /* InstacneEmailTestTests.m */; };
+		88A3CD7A1C2A947D00F4CFE3 /* InstacneEmailTestUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 88A3CD791C2A947D00F4CFE3 /* InstacneEmailTestUITests.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		88A3CD6B1C2A947D00F4CFE3 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 88A3CD491C2A947C00F4CFE3 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 88A3CD501C2A947C00F4CFE3;
+			remoteInfo = InstacneEmailTest;
+		};
+		88A3CD761C2A947D00F4CFE3 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 88A3CD491C2A947C00F4CFE3 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 88A3CD501C2A947C00F4CFE3;
+			remoteInfo = InstacneEmailTest;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		880267581C2B7B5D007BFDDE /* MessageUI.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MessageUI.framework; path = System/Library/Frameworks/MessageUI.framework; sourceTree = SDKROOT; };
+		88A3CD511C2A947C00F4CFE3 /* InstacneEmailTest.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = InstacneEmailTest.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		88A3CD551C2A947C00F4CFE3 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		88A3CD571C2A947C00F4CFE3 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		88A3CD581C2A947C00F4CFE3 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		88A3CD5A1C2A947C00F4CFE3 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		88A3CD5B1C2A947C00F4CFE3 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		88A3CD5E1C2A947C00F4CFE3 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		88A3CD601C2A947C00F4CFE3 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		88A3CD631C2A947C00F4CFE3 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		88A3CD651C2A947C00F4CFE3 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		88A3CD6A1C2A947D00F4CFE3 /* InstacneEmailTestTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = InstacneEmailTestTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		88A3CD6E1C2A947D00F4CFE3 /* InstacneEmailTestTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = InstacneEmailTestTests.m; sourceTree = "<group>"; };
+		88A3CD701C2A947D00F4CFE3 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		88A3CD751C2A947D00F4CFE3 /* InstacneEmailTestUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = InstacneEmailTestUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		88A3CD791C2A947D00F4CFE3 /* InstacneEmailTestUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = InstacneEmailTestUITests.m; sourceTree = "<group>"; };
+		88A3CD7B1C2A947D00F4CFE3 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		88A3CD4E1C2A947C00F4CFE3 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				880267591C2B7B5D007BFDDE /* MessageUI.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		88A3CD671C2A947D00F4CFE3 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		88A3CD721C2A947D00F4CFE3 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		88A3CD481C2A947C00F4CFE3 = {
+			isa = PBXGroup;
+			children = (
+				880267581C2B7B5D007BFDDE /* MessageUI.framework */,
+				88A3CD531C2A947C00F4CFE3 /* InstacneEmailTest */,
+				88A3CD6D1C2A947D00F4CFE3 /* InstacneEmailTestTests */,
+				88A3CD781C2A947D00F4CFE3 /* InstacneEmailTestUITests */,
+				88A3CD521C2A947C00F4CFE3 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		88A3CD521C2A947C00F4CFE3 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				88A3CD511C2A947C00F4CFE3 /* InstacneEmailTest.app */,
+				88A3CD6A1C2A947D00F4CFE3 /* InstacneEmailTestTests.xctest */,
+				88A3CD751C2A947D00F4CFE3 /* InstacneEmailTestUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		88A3CD531C2A947C00F4CFE3 /* InstacneEmailTest */ = {
+			isa = PBXGroup;
+			children = (
+				88A3CD571C2A947C00F4CFE3 /* AppDelegate.h */,
+				88A3CD581C2A947C00F4CFE3 /* AppDelegate.m */,
+				88A3CD5A1C2A947C00F4CFE3 /* ViewController.h */,
+				88A3CD5B1C2A947C00F4CFE3 /* ViewController.m */,
+				88A3CD5D1C2A947C00F4CFE3 /* Main.storyboard */,
+				88A3CD601C2A947C00F4CFE3 /* Assets.xcassets */,
+				88A3CD621C2A947C00F4CFE3 /* LaunchScreen.storyboard */,
+				88A3CD651C2A947C00F4CFE3 /* Info.plist */,
+				88A3CD541C2A947C00F4CFE3 /* Supporting Files */,
+			);
+			path = InstacneEmailTest;
+			sourceTree = "<group>";
+		};
+		88A3CD541C2A947C00F4CFE3 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				88A3CD551C2A947C00F4CFE3 /* main.m */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		88A3CD6D1C2A947D00F4CFE3 /* InstacneEmailTestTests */ = {
+			isa = PBXGroup;
+			children = (
+				88A3CD6E1C2A947D00F4CFE3 /* InstacneEmailTestTests.m */,
+				88A3CD701C2A947D00F4CFE3 /* Info.plist */,
+			);
+			path = InstacneEmailTestTests;
+			sourceTree = "<group>";
+		};
+		88A3CD781C2A947D00F4CFE3 /* InstacneEmailTestUITests */ = {
+			isa = PBXGroup;
+			children = (
+				88A3CD791C2A947D00F4CFE3 /* InstacneEmailTestUITests.m */,
+				88A3CD7B1C2A947D00F4CFE3 /* Info.plist */,
+			);
+			path = InstacneEmailTestUITests;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		88A3CD501C2A947C00F4CFE3 /* InstacneEmailTest */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 88A3CD7E1C2A947D00F4CFE3 /* Build configuration list for PBXNativeTarget "InstacneEmailTest" */;
+			buildPhases = (
+				88A3CD4D1C2A947C00F4CFE3 /* Sources */,
+				88A3CD4E1C2A947C00F4CFE3 /* Frameworks */,
+				88A3CD4F1C2A947C00F4CFE3 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = InstacneEmailTest;
+			productName = InstacneEmailTest;
+			productReference = 88A3CD511C2A947C00F4CFE3 /* InstacneEmailTest.app */;
+			productType = "com.apple.product-type.application";
+		};
+		88A3CD691C2A947D00F4CFE3 /* InstacneEmailTestTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 88A3CD811C2A947D00F4CFE3 /* Build configuration list for PBXNativeTarget "InstacneEmailTestTests" */;
+			buildPhases = (
+				88A3CD661C2A947D00F4CFE3 /* Sources */,
+				88A3CD671C2A947D00F4CFE3 /* Frameworks */,
+				88A3CD681C2A947D00F4CFE3 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				88A3CD6C1C2A947D00F4CFE3 /* PBXTargetDependency */,
+			);
+			name = InstacneEmailTestTests;
+			productName = InstacneEmailTestTests;
+			productReference = 88A3CD6A1C2A947D00F4CFE3 /* InstacneEmailTestTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		88A3CD741C2A947D00F4CFE3 /* InstacneEmailTestUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 88A3CD841C2A947D00F4CFE3 /* Build configuration list for PBXNativeTarget "InstacneEmailTestUITests" */;
+			buildPhases = (
+				88A3CD711C2A947D00F4CFE3 /* Sources */,
+				88A3CD721C2A947D00F4CFE3 /* Frameworks */,
+				88A3CD731C2A947D00F4CFE3 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				88A3CD771C2A947D00F4CFE3 /* PBXTargetDependency */,
+			);
+			name = InstacneEmailTestUITests;
+			productName = InstacneEmailTestUITests;
+			productReference = 88A3CD751C2A947D00F4CFE3 /* InstacneEmailTestUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		88A3CD491C2A947C00F4CFE3 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0720;
+				ORGANIZATIONNAME = imac;
+				TargetAttributes = {
+					88A3CD501C2A947C00F4CFE3 = {
+						CreatedOnToolsVersion = 7.2;
+					};
+					88A3CD691C2A947D00F4CFE3 = {
+						CreatedOnToolsVersion = 7.2;
+						TestTargetID = 88A3CD501C2A947C00F4CFE3;
+					};
+					88A3CD741C2A947D00F4CFE3 = {
+						CreatedOnToolsVersion = 7.2;
+						TestTargetID = 88A3CD501C2A947C00F4CFE3;
+					};
+				};
+			};
+			buildConfigurationList = 88A3CD4C1C2A947C00F4CFE3 /* Build configuration list for PBXProject "InstacneEmailTest" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 88A3CD481C2A947C00F4CFE3;
+			productRefGroup = 88A3CD521C2A947C00F4CFE3 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				88A3CD501C2A947C00F4CFE3 /* InstacneEmailTest */,
+				88A3CD691C2A947D00F4CFE3 /* InstacneEmailTestTests */,
+				88A3CD741C2A947D00F4CFE3 /* InstacneEmailTestUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		88A3CD4F1C2A947C00F4CFE3 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				88A3CD641C2A947C00F4CFE3 /* LaunchScreen.storyboard in Resources */,
+				88A3CD611C2A947C00F4CFE3 /* Assets.xcassets in Resources */,
+				88A3CD5F1C2A947C00F4CFE3 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		88A3CD681C2A947D00F4CFE3 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		88A3CD731C2A947D00F4CFE3 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		88A3CD4D1C2A947C00F4CFE3 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				88A3CD5C1C2A947C00F4CFE3 /* ViewController.m in Sources */,
+				88A3CD591C2A947C00F4CFE3 /* AppDelegate.m in Sources */,
+				88A3CD561C2A947C00F4CFE3 /* main.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		88A3CD661C2A947D00F4CFE3 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				88A3CD6F1C2A947D00F4CFE3 /* InstacneEmailTestTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		88A3CD711C2A947D00F4CFE3 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				88A3CD7A1C2A947D00F4CFE3 /* InstacneEmailTestUITests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		88A3CD6C1C2A947D00F4CFE3 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 88A3CD501C2A947C00F4CFE3 /* InstacneEmailTest */;
+			targetProxy = 88A3CD6B1C2A947D00F4CFE3 /* PBXContainerItemProxy */;
+		};
+		88A3CD771C2A947D00F4CFE3 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 88A3CD501C2A947C00F4CFE3 /* InstacneEmailTest */;
+			targetProxy = 88A3CD761C2A947D00F4CFE3 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		88A3CD5D1C2A947C00F4CFE3 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				88A3CD5E1C2A947C00F4CFE3 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		88A3CD621C2A947C00F4CFE3 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				88A3CD631C2A947C00F4CFE3 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		88A3CD7C1C2A947D00F4CFE3 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.2;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		88A3CD7D1C2A947D00F4CFE3 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		88A3CD7F1C2A947D00F4CFE3 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = InstacneEmailTest/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.imac.InstacneEmailTest;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		88A3CD801C2A947D00F4CFE3 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = InstacneEmailTest/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.imac.InstacneEmailTest;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		88A3CD821C2A947D00F4CFE3 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = InstacneEmailTestTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.imac.InstacneEmailTestTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/InstacneEmailTest.app/InstacneEmailTest";
+			};
+			name = Debug;
+		};
+		88A3CD831C2A947D00F4CFE3 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = InstacneEmailTestTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.imac.InstacneEmailTestTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/InstacneEmailTest.app/InstacneEmailTest";
+			};
+			name = Release;
+		};
+		88A3CD851C2A947D00F4CFE3 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = InstacneEmailTestUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.imac.InstacneEmailTestUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = InstacneEmailTest;
+				USES_XCTRUNNER = YES;
+			};
+			name = Debug;
+		};
+		88A3CD861C2A947D00F4CFE3 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = InstacneEmailTestUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.imac.InstacneEmailTestUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = InstacneEmailTest;
+				USES_XCTRUNNER = YES;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		88A3CD4C1C2A947C00F4CFE3 /* Build configuration list for PBXProject "InstacneEmailTest" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				88A3CD7C1C2A947D00F4CFE3 /* Debug */,
+				88A3CD7D1C2A947D00F4CFE3 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		88A3CD7E1C2A947D00F4CFE3 /* Build configuration list for PBXNativeTarget "InstacneEmailTest" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				88A3CD7F1C2A947D00F4CFE3 /* Debug */,
+				88A3CD801C2A947D00F4CFE3 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		88A3CD811C2A947D00F4CFE3 /* Build configuration list for PBXNativeTarget "InstacneEmailTestTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				88A3CD821C2A947D00F4CFE3 /* Debug */,
+				88A3CD831C2A947D00F4CFE3 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		88A3CD841C2A947D00F4CFE3 /* Build configuration list for PBXNativeTarget "InstacneEmailTestUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				88A3CD851C2A947D00F4CFE3 /* Debug */,
+				88A3CD861C2A947D00F4CFE3 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 88A3CD491C2A947C00F4CFE3 /* Project object */;
+}
