@@ -20,8 +20,28 @@
 
 @synthesize listTableView;
 
+
 - (void)viewDidLoad {
     [super viewDidLoad];
+
+    // MutableArray 초기화 먼저 수행해야 함.
+    xmlDataArr = [[NSMutableArray alloc]init];
+    NSLog(@"count : %lu", xmlDataArr.count);
+    
+    
+    // parser
+    // NSXMlParser Example Code
+    NSURL *xmlUrl = [[NSURL alloc]initWithString:@"http://haha03da.cafe24.com/list.xml"];
+    parser = [[NSXMLParser alloc]initWithContentsOfURL:xmlUrl];
+    
+    // 스스로에게 이벤트를 던져줘야지 사용 가능함.
+    parser.delegate = self;
+    [parser parse];
+    
+
+    
+    // 샘플데이터 주석처리
+    /*
     NSDictionary *dict1 =[[NSDictionary alloc] initWithObjectsAndKeys:@"헤드폰",@"ProductName",@"깨끗",@"State",@"2011-9-11",@"Date",@"123-4567-890",@"Contact",@"2000원",@"Value", nil];
     NSDictionary *dict2 =[[NSDictionary alloc] initWithObjectsAndKeys:@"카메라",@"ProductName",@"더러움",@"State",@"2001-1-10",@"Date",@"010-238-0099",@"Contact",@"3000원",@"Value", nil];
     NSDictionary *dict3 =[[NSDictionary alloc] initWithObjectsAndKeys:@"돋보기",@"ProductName",@"새거",@"State",@"2009-2-9",@"Date",@"010-2341-2222",@"Contact",@"20000원",@"Value", nil];
@@ -44,6 +64,11 @@
     
     
     datalist = [[NSArray alloc]initWithObjects:dict1,dict2,dict3,dict4,dict5,dict6,dict7,dict8,dict9,dict10,dict11,dict12,dict13,dict14,dict15, nil];
+    */
+    
+    
+    
+    datalist = xmlDataArr;
 }
 
 - (void)didReceiveMemoryWarning {
@@ -107,7 +132,6 @@
 
 // DetailViewController에 데이터를 넘겨주는 처리를 함.
 // 세그웨이가 넘어오는 매소드
-//
 -(void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender{
     if ([[segue identifier]isEqualToString:@"goodsShowDetail"]) {
         // 선택된 로우의 IndexPath값을 가져옴
@@ -118,6 +142,53 @@
     }
 }
 
+
+/*
+ //-----------------------------------------------------------------------------------------------
+ [XML 처리]
+ //-----------------------------------------------------------------------------------------------
+ */
+
+-(void)parser:(NSXMLParser *)parser didStartElement:(NSString *)elementName namespaceURI:(NSString *)namespaceURI qualifiedName:(NSString *)qName attributes:(NSDictionary<NSString *,NSString *> *)attributeDict{
+    
+    NSLog(@"didStartElement : %@", elementName);
+    
+    tempElem = elementName;
+    
+    deleteEmptyStrYn = 1;
+    
+    if ([tempElem isEqualToString:@"ProductList"]) {
+        NSLog(@"ProductList : %@", elementName);
+        xmlDataDic = [[NSMutableDictionary alloc]init];
+    }
+
+}
+
+
+-(void)parser:(NSXMLParser *)parser foundCharacters:(NSString *)string{
+    //NSLog(@"foundCharacters : %@", string);
+    
+    
+    if (!([tempElem isEqualToString:@"ProductList"]) && deleteEmptyStrYn == 1) {
+        NSLog(@"%@ : %@", tempElem, string);
+        
+        [xmlDataDic setObject:string forKey:tempElem];
+    }
+    
+
+    
+}
+
+-(void)parser:(NSXMLParser *)parser didEndElement:(NSString *)elementName namespaceURI:(NSString *)namespaceURI qualifiedName:(NSString *)qName{
+    
+    if ([elementName isEqualToString:@"ProductList"]) {
+        NSLog(@"didEndElement : %@", elementName);
+        [xmlDataArr addObject:xmlDataDic];
+        //NSLog(@"%@", xmlDataDic);
+        NSLog(@"------Dic 추가완료------\n");
+    }
+    deleteEmptyStrYn = 2;
+}
 
 
 @end

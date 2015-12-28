@@ -1,0 +1,302 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="9531" systemVersion="15C50" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="0SY-hW-U4Q">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9529"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" image="mainBG.png" translatesAutoresizingMaskIntoConstraints="NO" id="c4p-Z8-bqG">
+                                <rect key="frame" x="0.0" y="-480" width="320" height="480"/>
+                                <variation key="heightClass=regular-widthClass=compact" fixedFrame="YES">
+                                    <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                                </variation>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="hXi-FV-sv7">
+                                <rect key="frame" x="-23" y="-15" width="46" height="30"/>
+                                <state key="normal" image="mainMenu1.png"/>
+                                <variation key="heightClass=regular-widthClass=compact" fixedFrame="YES">
+                                    <rect key="frame" x="115" y="243" width="240" height="40"/>
+                                </variation>
+                                <connections>
+                                    <segue destination="ebN-Yg-Qyt" kind="show" identifier="menu1" id="aOg-Yk-yHl"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="wdY-lN-Hbu">
+                                <rect key="frame" x="-23" y="-15" width="46" height="30"/>
+                                <state key="normal" image="mainMenu2.png"/>
+                                <variation key="heightClass=regular-widthClass=compact" fixedFrame="YES">
+                                    <rect key="frame" x="115" y="307" width="240" height="40"/>
+                                </variation>
+                                <connections>
+                                    <segue destination="ebN-Yg-Qyt" kind="show" identifier="menu2" id="NjP-9X-kF3"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="hUj-EQ-ECn">
+                                <rect key="frame" x="-23" y="-15" width="46" height="30"/>
+                                <state key="normal" image="mainMenu3.png"/>
+                                <variation key="heightClass=regular-widthClass=compact" fixedFrame="YES">
+                                    <rect key="frame" x="110" y="378" width="240" height="40"/>
+                                </variation>
+                                <connections>
+                                    <segue destination="ebN-Yg-Qyt" kind="show" identifier="menu3" id="uJX-6q-ebU"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="eyU-yc-3hn">
+                                <rect key="frame" x="-23" y="-15" width="46" height="30"/>
+                                <state key="normal" image="mainMenu4.png"/>
+                                <variation key="heightClass=regular-widthClass=compact" fixedFrame="YES">
+                                    <rect key="frame" x="110" y="453" width="240" height="40"/>
+                                </variation>
+                                <connections>
+                                    <segue destination="ebN-Yg-Qyt" kind="show" identifier="menu4" id="PfS-Ca-OyJ"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="i26-Hg-ScY">
+                                <rect key="frame" x="-23" y="-15" width="46" height="30"/>
+                                <state key="normal" image="mainMenu5.png"/>
+                                <variation key="heightClass=regular-widthClass=compact" fixedFrame="YES">
+                                    <rect key="frame" x="110" y="518" width="240" height="40"/>
+                                </variation>
+                                <connections>
+                                    <segue destination="ebN-Yg-Qyt" kind="show" identifier="menu5" id="pBc-3X-M4v"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="utQ-C4-Lif">
+                                <rect key="frame" x="-23" y="-15" width="46" height="30"/>
+                                <state key="normal" image="mainMenu6.png"/>
+                                <variation key="heightClass=regular-widthClass=compact" fixedFrame="YES">
+                                    <rect key="frame" x="110" y="577" width="240" height="40"/>
+                                </variation>
+                            </button>
+                            <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" image="mainTitle.png" translatesAutoresizingMaskIntoConstraints="NO" id="wkg-E0-2FH">
+                                <rect key="frame" x="0.0" y="-100" width="230" height="100"/>
+                                <variation key="heightClass=regular-widthClass=compact" fixedFrame="YES">
+                                    <rect key="frame" x="22" y="49" width="230" height="100"/>
+                                </variation>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <variation key="default">
+                            <mask key="subviews">
+                                <exclude reference="c4p-Z8-bqG"/>
+                                <exclude reference="hXi-FV-sv7"/>
+                                <exclude reference="wdY-lN-Hbu"/>
+                                <exclude reference="hUj-EQ-ECn"/>
+                                <exclude reference="eyU-yc-3hn"/>
+                                <exclude reference="i26-Hg-ScY"/>
+                                <exclude reference="utQ-C4-Lif"/>
+                                <exclude reference="wkg-E0-2FH"/>
+                            </mask>
+                        </variation>
+                        <variation key="heightClass=regular-widthClass=compact">
+                            <mask key="subviews">
+                                <include reference="c4p-Z8-bqG"/>
+                                <include reference="hXi-FV-sv7"/>
+                                <include reference="wdY-lN-Hbu"/>
+                                <include reference="hUj-EQ-ECn"/>
+                                <include reference="eyU-yc-3hn"/>
+                                <include reference="i26-Hg-ScY"/>
+                                <include reference="utQ-C4-Lif"/>
+                                <include reference="wkg-E0-2FH"/>
+                            </mask>
+                        </variation>
+                    </view>
+                    <navigationItem key="navigationItem" id="jwj-Wa-You"/>
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina47"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="882.75" y="484.125"/>
+        </scene>
+        <!--Detail View Controller-->
+        <scene sceneID="Xnq-1A-W7q">
+            <objects>
+                <viewController id="ebN-Yg-Qyt" customClass="DetailViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="oEA-w0-Ouw"/>
+                        <viewControllerLayoutGuide type="bottom" id="nw1-KQ-hhH"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="zuq-aR-4Fz">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" image="contentBG.png" translatesAutoresizingMaskIntoConstraints="NO" id="3Xv-BW-EMf">
+                                <rect key="frame" x="0.0" y="-480" width="320" height="480"/>
+                                <variation key="heightClass=regular-widthClass=compact" fixedFrame="YES">
+                                    <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                                </variation>
+                            </imageView>
+                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="1UO-SP-BTG">
+                                <rect key="frame" x="0.0" y="0.0" width="240" height="128"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="size" keyPath="contentSize">
+                                        <size key="value" width="310" height="1044"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                                <variation key="heightClass=regular-widthClass=compact" fixedFrame="YES">
+                                    <rect key="frame" x="29" y="63" width="326" height="599"/>
+                                </variation>
+                            </scrollView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="cUO-I6-mKI">
+                                <rect key="frame" x="-23" y="-15" width="46" height="30"/>
+                                <state key="normal" image="btnBack.png">
+                                    <color key="titleColor" red="0.98544609849999998" green="1" blue="0.98277103809999999" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
+                                <variation key="heightClass=regular-widthClass=compact" fixedFrame="YES">
+                                    <rect key="frame" x="29" y="20" width="75" height="35"/>
+                                </variation>
+                                <connections>
+                                    <action selector="backButtonAction:" destination="ebN-Yg-Qyt" eventType="touchUpInside" id="ij0-QG-qdt"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="AJf-Cf-qsn">
+                                <rect key="frame" x="-23" y="-15" width="46" height="30"/>
+                                <state key="normal" image="btnPhotos.png">
+                                    <color key="titleColor" red="0.98544609849999998" green="1" blue="0.98277103809999999" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
+                                <variation key="heightClass=regular-widthClass=compact" fixedFrame="YES">
+                                    <rect key="frame" x="280" y="20" width="75" height="35"/>
+                                </variation>
+                                <connections>
+                                    <segue destination="X4C-0D-qYz" kind="show" identifier="showGallery" id="2oh-zc-ywy"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <variation key="default">
+                            <mask key="subviews">
+                                <exclude reference="3Xv-BW-EMf"/>
+                                <exclude reference="1UO-SP-BTG"/>
+                                <exclude reference="cUO-I6-mKI"/>
+                                <exclude reference="AJf-Cf-qsn"/>
+                            </mask>
+                        </variation>
+                        <variation key="heightClass=regular-widthClass=compact">
+                            <mask key="subviews">
+                                <include reference="3Xv-BW-EMf"/>
+                                <include reference="1UO-SP-BTG"/>
+                                <include reference="cUO-I6-mKI"/>
+                                <include reference="AJf-Cf-qsn"/>
+                            </mask>
+                        </variation>
+                    </view>
+                    <connections>
+                        <outlet property="detailScrollView" destination="1UO-SP-BTG" id="Xu0-Eh-Euc"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="iE1-B7-g8J" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1704.75" y="484.125"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="lyb-ri-R3E">
+            <objects>
+                <navigationController navigationBarHidden="YES" id="0SY-hW-U4Q" sceneMemberID="viewController">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="hYB-Nq-04J">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <connections>
+                        <segue destination="BYZ-38-t0r" kind="relationship" relationship="rootViewController" id="q4J-eU-nFx"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="6Lp-hO-bhr" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-51" y="900.75"/>
+        </scene>
+        <!--Gallery View Controller-->
+        <scene sceneID="mhB-hK-fnS">
+            <objects>
+                <viewController id="X4C-0D-qYz" customClass="GalleryViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="XGR-cL-pFf"/>
+                        <viewControllerLayoutGuide type="bottom" id="2Uj-7o-qkc"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="L16-Xy-SIU">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" image="contentBG.png" translatesAutoresizingMaskIntoConstraints="NO" id="DWV-n5-wzS">
+                                <rect key="frame" x="0.0" y="-480" width="320" height="480"/>
+                                <variation key="heightClass=regular-widthClass=compact" fixedFrame="YES">
+                                    <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                                </variation>
+                            </imageView>
+                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="6uU-8u-QSa">
+                                <rect key="frame" x="0.0" y="0.0" width="240" height="128"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="size" keyPath="contentSize">
+                                        <size key="value" width="310" height="1044"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                                <variation key="heightClass=regular-widthClass=compact" fixedFrame="YES">
+                                    <rect key="frame" x="29" y="63" width="326" height="599"/>
+                                </variation>
+                            </scrollView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="GCZ-J1-BNe">
+                                <rect key="frame" x="-23" y="-15" width="46" height="30"/>
+                                <state key="normal" image="btnBack.png">
+                                    <color key="titleColor" red="0.98544609849999998" green="1" blue="0.98277103809999999" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
+                                <variation key="heightClass=regular-widthClass=compact" fixedFrame="YES">
+                                    <rect key="frame" x="29" y="20" width="75" height="35"/>
+                                </variation>
+                                <connections>
+                                    <action selector="backButtonAction:" destination="X4C-0D-qYz" eventType="touchUpInside" id="VdX-5Z-4JK"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <variation key="default">
+                            <mask key="subviews">
+                                <exclude reference="DWV-n5-wzS"/>
+                                <exclude reference="6uU-8u-QSa"/>
+                                <exclude reference="GCZ-J1-BNe"/>
+                            </mask>
+                        </variation>
+                        <variation key="heightClass=regular-widthClass=compact">
+                            <mask key="subviews">
+                                <include reference="DWV-n5-wzS"/>
+                                <include reference="6uU-8u-QSa"/>
+                                <include reference="GCZ-J1-BNe"/>
+                            </mask>
+                        </variation>
+                    </view>
+                    <connections>
+                        <outlet property="galleryScrollView" destination="6uU-8u-QSa" id="pbI-UW-Rxn"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="QiV-D6-RbN" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2409.75" y="479.625"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="btnBack.png" width="75" height="35"/>
+        <image name="btnPhotos.png" width="75" height="35"/>
+        <image name="contentBG.png" width="320" height="480"/>
+        <image name="mainBG.png" width="320" height="480"/>
+        <image name="mainMenu1.png" width="240" height="40"/>
+        <image name="mainMenu2.png" width="240" height="40"/>
+        <image name="mainMenu3.png" width="240" height="40"/>
+        <image name="mainMenu4.png" width="240" height="40"/>
+        <image name="mainMenu5.png" width="240" height="40"/>
+        <image name="mainMenu6.png" width="240" height="40"/>
+        <image name="mainTitle.png" width="230" height="100"/>
+    </resources>
+    <inferredMetricsTieBreakers>
+        <segue reference="pBc-3X-M4v"/>
+    </inferredMetricsTieBreakers>
+</document>
